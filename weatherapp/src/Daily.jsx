@@ -1,6 +1,18 @@
 export default function Daily({ data }) {
   if (data.length === 0) {
-    return <h1 className="text-3xl text-center m-32">Search for your city!</h1>;
+    return (
+      <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 mx-auto mt-16">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          Search for your city!
+        </h5>
+        <p className="font-normal text-gray-700">
+          Whether you're planning a weekend getaway or checking the daily
+          forecast, my app delivers up-to-date conditions, including
+          temperature, humidity, and precipitation. Stay informed with hourly
+          and daily forecasts.
+        </p>
+      </div>
+    );
   } else {
     const daysOfWeek = [
       "Sunday",
