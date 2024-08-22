@@ -10,7 +10,7 @@ export default function Search({ setData, setInput, input, data }) {
       }
       const data = await response.json();
       setData(data);
-      console.log(data);
+      //console.log(data);
     } catch (error) {
       console.log("Fetch error", error);
     } finally {
